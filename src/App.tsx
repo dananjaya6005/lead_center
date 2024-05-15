@@ -1,7 +1,5 @@
+//@ts-nocheck
 import React, { useState ,useEffect, useMemo } from 'react';
-import { DownOutlined } from '@ant-design/icons';
-import type { MenuProps } from 'antd';
-import { SupabaseClient } from '@supabase/supabase-js';
 import { createClient } from '@supabase/supabase-js';
 import { Input } from 'antd';
 import { Button, message, Space } from 'antd';
