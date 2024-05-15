@@ -122,14 +122,14 @@ const App: React.FC = () => {
     className='flex justify-center  items-center h-screen'>
 
 
-    <div className='flex flex-col bg-white m-40 p-28 rounded-3xl w-full bg-opacity-90 backdrop-blur-md	'>
-      <p className='text-5xl font-extrabold text-slate-700 text-center'>MYCRM.LK </p>
-      <p className='text-xl font-semibold text-slate-500 text-center my-4' >Facebook Engagement Leads Generation Form</p>
+    <div className='flex flex-col bg-white m-40 p-28 rounded-3xl w-full bg-opacity-90 backdrop-blur-md max-[500px]:m-2	'>
+      <p className='text-5xl font-extrabold text-slate-700 text-center max-[600px]:text-4xl '>MYCRM.LK </p>
+      <p className='text-xl font-semibold text-slate-500 text-center my-4 max-[600px]:text-lg' >Facebook Engagement Leads Generation Form</p>
       <div className='flex flex-col  justify-center items-center'>
     <Select
-    className='my-4'
+    className='my-4 w-[50%] max-[600px]:w-full'
      placeholder="Select an organization"
-      style={{ width: '50%' }}
+      // style={{ width: window.innerWidth < 500 ? '100%' : '50%' }}
       onChange={(text)=> setSelectedOrg(text) }
       options={[
       { label: 'DMS', value: 'DMS' },
@@ -157,16 +157,16 @@ const App: React.FC = () => {
     />
 
         <Select
-            className='my-4'
+            className='my-4 w-[50%] max-[600px]:w-full'
               placeholder="Select a project"
-              style={{ width: '50%' }}
+              
               onChange={(text)=> setSelectedProject(text) }
               options={projectForOrg}
             />
 
-        <Input onChange={(e)=> setFullName(e.target.value)} className='w-[50%] my-4' placeholder="Customer Name" />
-        <Input onChange={(e)=> setPhone(e.target.value)} className='w-[50%] my-4' placeholder="Customer Phone" />
-        <Input onChange={(e)=> setEmail(e.target.value)} className='w-[50%] my-4' placeholder="Customer Email" />
+        <Input onChange={(e)=> setFullName(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Name" />
+        <Input onChange={(e)=> setPhone(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Phone" />
+        <Input onChange={(e)=> setEmail(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Email" />
 
         <Button  disabled={phone.length == 0 ? true : false} onClick={insertData} type="primary">Submit</Button>
 
