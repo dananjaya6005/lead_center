@@ -133,7 +133,7 @@ const App: React.FC = () => {
       onChange={(text)=> setSelectedOrg(text) }
       options={[
       { label: 'DMS', value: 'DMS' },
-      { label: 'Golden Gate', value: 'Golden Gate' },
+      { label: 'Golden gate', value: 'Golden gate' },
       { label: 'Guardian', value: 'Guardian' },
       { label: 'Parkproperties', value: 'Parkproperties' },
       { label: 'Royaloakholding', value: 'Royaloakholding' },
