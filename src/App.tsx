@@ -83,17 +83,23 @@ const App: React.FC = () => {
 
       if (error) {
         console.error(error);
+         alert('error occured');
         return;
       }else
       {
+        console.log("respose after data insert",data);
         success();
-
-
-         setTimeout(()=>{
-          window.location.reload();
-         }, 2000)
-
-      
+     
+      if(data == null) {
+        console.log('data storeed successfully and recieved null'); 
+        setSelectedOrg('');
+        setSelectedProject([{}]);
+        setTimeout(()=>{
+          setFullName('');
+          setPhone('');
+          setEmail('');
+        },100)
+      }
 
         
       }
@@ -131,9 +137,10 @@ const App: React.FC = () => {
      placeholder="Select an organization"
       // style={{ width: window.innerWidth < 500 ? '100%' : '50%' }}
       onChange={(text)=> setSelectedOrg(text) }
+      value={selectedOrg}
       options={[
       { label: 'DMS', value: 'DMS' },
-      { label: 'Golden gate', value: 'Golden gate' },
+      { label: 'Golden gate', value: 'Golden gate'},
       { label: 'Guardian', value: 'Guardian' },
       { label: 'Parkproperties', value: 'Parkproperties' },
       { label: 'Royal Oak Lands', value: 'Royal Oak Lands' },
@@ -157,16 +164,16 @@ const App: React.FC = () => {
     />
 
         <Select
+           value={selectedProject}
             className='my-4 w-[50%] max-[600px]:w-full'
               placeholder="Select a project"
-              
               onChange={(text)=> setSelectedProject(text) }
               options={projectForOrg}
-            />
+        />
 
-        <Input onChange={(e)=> setFullName(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Name" />
-        <Input onChange={(e)=> setPhone(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Phone" />
-        <Input onChange={(e)=> setEmail(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Email" />
+        <Input value={fullName} onChange={(e)=> setFullName(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Name" />
+        <Input value={phone} onChange={(e)=> setPhone(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Phone" />
+        <Input value={email} onChange={(e)=> setEmail(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Email" />
 
         <Button  disabled={phone.length == 0 ? true : false} onClick={insertData} type="primary">Submit</Button>
 
