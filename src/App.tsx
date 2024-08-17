@@ -144,7 +144,7 @@ const App: React.FC = () => {
       { label: 'Guardian', value: 'Guardian' },
       { label: 'Parkproperties', value: 'Parkproperties' },
       { label: 'Royal Oak Lands', value: 'Royal Oak Lands' },
-      { label: 'RoyaloakResidencies', value: 'RoyaloakResidencies' },
+      { label: 'Royal Oak Residencies', value: 'Royal Oak Residencies' },
       { label: 'EmpirePropeties', value: 'EmpirePropeties' },
       { label: 'Empirelands', value: 'Empirelands' },
       { label: 'Leoholdingslanka', value: 'Leoholdingslanka' },
