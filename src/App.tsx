@@ -5,6 +5,7 @@ import { Input } from 'antd';
 import { Button, message, Space } from 'antd';
 import bgimg from './assets/bgimg.jpg';
 import mysvg from './assets/mysvg.svg';
+import { RenameSuperviosr } from './components/RenameSuperviosr';
 
 import { Select } from 'antd';
 
@@ -115,9 +116,7 @@ const App: React.FC = () => {
     <>
     
     <div 
-
     style={{
-
       backgroundImage: `url(${mysvg})`,
       backgroundSize: 'cover',
       backgroundPosition: 'center',
@@ -128,7 +127,7 @@ const App: React.FC = () => {
     className='flex justify-center  items-center h-screen'>
 
 
-    <div className='flex flex-col bg-white m-40 p-28 rounded-3xl w-full bg-opacity-90 backdrop-blur-md max-[500px]:m-2	'>
+    <div className='flex flex-col bg-white m-40 p-28 rounded-3xl w-full bg-opacity-90 backdrop-blur-md max-[500px]:m-2 max-[600px]:p-4	'>
       <p className='text-5xl font-extrabold text-slate-700 text-center max-[600px]:text-4xl '>MYCRM.LK </p>
       <p className='text-xl font-semibold text-slate-500 text-center my-4 max-[600px]:text-lg' >Facebook Engagement Leads Generation Form</p>
       <div className='flex flex-col  justify-center items-center'>
@@ -171,8 +170,8 @@ const App: React.FC = () => {
               options={projectForOrg}
         />
 
-        <Input value={fullName} onChange={(e)=> setFullName(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Name" />
-        <Input value={phone} onChange={(e)=> setPhone(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Phone" />
+        <Input value={fullName} onChange={(e)=> setFullName(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full ' placeholder="Customer Name" />
+        <Input value={phone} onChange={(e)=> setPhone(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full ' placeholder="Customer Phone" />
         <Input value={email} onChange={(e)=> setEmail(e.target.value)} className='w-[50%] my-4 max-[600px]:w-full' placeholder="Customer Email" />
 
         <Button  disabled={phone.length == 0 ? true : false} onClick={insertData} type="primary">Submit</Button>
@@ -183,6 +182,7 @@ const App: React.FC = () => {
    
     </div>
     </div>
+    <RenameSuperviosr/>
     </>
   );
 };
