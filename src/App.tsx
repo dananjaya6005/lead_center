@@ -5,7 +5,7 @@ import { Input } from 'antd';
 import { Button, message, Space } from 'antd';
 import bgimg from './assets/bgimg.jpg';
 import mysvg from './assets/mysvg.svg';
-import { RenameSuperviosr } from './components/RenameSuperviosr';
+
 
 import { Select } from 'antd';
 
