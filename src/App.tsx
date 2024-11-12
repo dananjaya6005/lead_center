@@ -93,8 +93,8 @@ const App: React.FC = () => {
      
       if(data == null) {
         console.log('data storeed successfully and recieved null'); 
-        setSelectedOrg('');
-        setSelectedProject([{}]);
+        // setSelectedOrg('');
+        // setSelectedProject([{}]);
         setTimeout(()=>{
           setFullName('');
           setPhone('');
