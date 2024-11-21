@@ -161,6 +161,7 @@ const App: React.FC = () => {
       { label: 'Nexis College', value: 'Nexis College' },
       { label: 'Shadama lands pvt ltd', value: 'Shadama lands pvt ltd' },
       { label: 'Siripela', value: 'Siripela' },
+      { label: 'Winrich International', value: 'Winrich International' },
 
       ]}
     />
