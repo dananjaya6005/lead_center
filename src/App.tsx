@@ -163,6 +163,7 @@ const App: React.FC = () => {
       { label: 'Siripela', value: 'Siripela' },
       { label: 'Winrich International', value: 'Winrich International' },
       { label: 'Siripela Homes & Construction', value: 'Siripela Homes & Construction' },
+      { label : 'Victoria Property' , value : 'Victoria Property'}
 
 
       ]}
