@@ -140,7 +140,6 @@ const App: React.FC = () => {
       options={[
       { label: 'DMS', value: 'DMS' },
       { label: 'Golden gate', value: 'Golden gate'},
-      { label: 'Guardian', value: 'Guardian' },
       { label : 'RIMS' , value : 'RIMS'},
       { label: 'Parkproperties', value: 'Parkproperties' },
       { label: 'Royal Oak Holding', value: 'Royal Oak Holding'},
@@ -149,21 +148,19 @@ const App: React.FC = () => {
       { label: 'Empirelands', value: 'Empirelands' },
       { label: 'Leoholdingslanka', value: 'Leoholdingslanka' },
       { label: 'Jayarealestate', value: 'Jayarealestate' },
-      { label: 'Groundworth', value: 'Groundworth' }, 
       { label: 'Sahana Idam', value: 'Sahana Idam' },
-      { label: 'JMJ', value: 'JMJ' },
       { label: 'Sunico', value: 'Sunico' },
-      { label: 'Academic Gateways', value: 'Academic Gateways' },
-      { label: 'Prestige', value: 'Prestige' },
-      { label: 'SAN Properties', value: 'SAN Properties' },
       { label: 'City Lands', value: 'City Lands' },
-      { label: 'Holiday R and C', value: 'Holiday R and C' },
       { label: 'Nexis College', value: 'Nexis College' },
-      { label: 'Shadama lands pvt ltd', value: 'Shadama lands pvt ltd' },
       { label: 'Siripela', value: 'Siripela' },
       { label: 'Winrich International', value: 'Winrich International' },
       { label: 'Siripela Homes & Construction', value: 'Siripela Homes & Construction' },
-      { label : 'Victoria Property' , value : 'Victoria Property'}
+      { label : 'Victoria Property' , value : 'Victoria Property'},
+      { label : 'Tree Trails' , value : 'Tree Trails'},
+      { label : 'Devthuru Furnitures' , value : 'Devthuru Furnitures'},
+
+
+      
 
 
       ]}
