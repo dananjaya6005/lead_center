@@ -5,6 +5,7 @@ import { Input } from 'antd';
 import { Button, message, Space } from 'antd';
 import bgimg from './assets/bgimg.jpg';
 import mysvg from './assets/mysvg.svg';
+import BulkData from './components/bulkdata';
 
 
 import { Select } from 'antd';
@@ -159,10 +160,6 @@ const App: React.FC = () => {
       { label : 'Tree Trails' , value : 'Tree Trails'},
       { label : 'Devthuru Furnitures' , value : 'Devthuru Furnitures'},
 
-
-      
-
-
       ]}
     />
 
@@ -187,6 +184,7 @@ const App: React.FC = () => {
     </div>
     </div>
     {/* <RenameSuperviosr/> */}
+    <BulkData/>
     </>
   );
 };
