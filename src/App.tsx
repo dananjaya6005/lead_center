@@ -159,6 +159,12 @@ const App: React.FC = () => {
       { label : 'Victoria Property' , value : 'Victoria Property'},
       { label : 'Tree Trails' , value : 'Tree Trails'},
       { label : 'Devthuru Furnitures' , value : 'Devthuru Furnitures'},
+      { label : 'Leo Holdings' , value : 'Leo Holdings'},
+      { label : 'Leo Holdings' , value : 'Leo Holdings'},
+      { label : 'EPR' , value : 'EPR'},
+      { label : 'union assurance' , value : 'union assurance'},
+      { label : 'Dedigama Property' , value : 'Dedigama Property'},
+      
 
       ]}
     />
