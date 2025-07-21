@@ -147,7 +147,6 @@ const App: React.FC = () => {
       { label: 'Royal Oak Residencies', value: 'Royal Oak Residencies' },
       { label: 'EmpirePropeties', value: 'EmpirePropeties' },
       { label: 'Empirelands', value: 'Empirelands' },
-      { label: 'Leoholdingslanka', value: 'Leoholdingslanka' },
       { label: 'Jayarealestate', value: 'Jayarealestate' },
       { label: 'Sahana Idam', value: 'Sahana Idam' },
       { label: 'Sunico', value: 'Sunico' },
@@ -159,7 +158,6 @@ const App: React.FC = () => {
       { label : 'Victoria Property' , value : 'Victoria Property'},
       { label : 'Tree Trails' , value : 'Tree Trails'},
       { label : 'Devthuru Furnitures' , value : 'Devthuru Furnitures'},
-      { label : 'Leo Holdings' , value : 'Leo Holdings'},
       { label : 'Leo Holdings' , value : 'Leo Holdings'},
       { label : 'EPR' , value : 'EPR'},
       { label : 'union assurance' , value : 'union assurance'},
@@ -190,7 +188,7 @@ const App: React.FC = () => {
     </div>
     </div>
     {/* <RenameSuperviosr/> */}
-    <BulkData/>
+    {/* <BulkData/> */}
     </>
   );
 };
