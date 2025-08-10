@@ -156,7 +156,7 @@ const App: React.FC = () => {
       { label: 'Winrich International', value: 'Winrich International' },
       { label: 'Siripela Homes & Construction', value: 'Siripela Homes & Construction' },
       { label : 'Victoria Property' , value : 'Victoria Property'},
-      // { label : 'Tree Trails' , value : 'Tree Trails'},
+ 
       { label : 'Devthuru Furnitures' , value : 'Devthuru Furnitures'},
       { label : 'Leo Holdings' , value : 'Leo Holdings'},
       { label : 'EPR' , value : 'EPR'},
@@ -190,8 +190,8 @@ const App: React.FC = () => {
    
     </div>
     </div>
-    {/* <RenameSuperviosr/> */}
-    <BulkData/>
+    {/* <RenameSuperviosr/>
+    <BulkData/> */}
     </>
   );
 };
