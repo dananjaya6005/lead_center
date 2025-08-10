@@ -8,15 +8,15 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
 
 
   const data =[
-    { "name": "R.B. C. AMILA", "phone_number": "717925995" },
-    { "name": "Nethmina", "phone_number": "714707092" },
-    { "name": "INDIKA FERNANDO", "phone_number": "94771196453" },
-    { "name": "Chathura", "phone_number": "94717439180" },
-    { "name": "shashika", "phone_number": "94742166350" },
-    { "name": "Namal samarasekara", "phone_number": "94774694725" },
-    { "name": "ad.saman kumara", "phone_number": "94715787094" },
-    { "name": "isuru", "phone_number": "94711669081" },
-    { "name": "Buddhi Gayanthika Amarasinghe", "phone_number": "94713757345" }
+    { "name": "priyantha", "phone_number": "+94785110409" },
+    { "name": "W.S.L.Withanage", "phone_number": "+94717276952" },
+    { "name": "Janiru", "phone_number": "+94740670569" },
+    { "name": "Lahiru Sandaruwan", "phone_number": "+94786622817" },
+    { "name": "Darshan", "phone_number": "+94785788180" },
+    { "name": "M G Tharanga Jayanath", "phone_number": "+94771454499" },
+    { "name": "chandana", "phone_number": "+94766473521" },
+    { "name": "Dilini Dissanayake", "phone_number": "+94711626397" },
+    { "name": "Shani Ramanayaka", "phone_number": "+94712449090" }
   ]
   
   
@@ -25,6 +25,10 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
   
   
   
+  
+  
+  
+
   
 
   export default function BulkData() {
@@ -46,15 +50,15 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
           const fullName = name;
           const phone = phone_number;
           const email = '';
-          const userName = 'manjula1';
+          const userName = 'sanath_341';
           const leadID = generateRandomLeadID();
-          const project = 'May - 2025 - Diaspora - Katana';
-          const supivisor_userName = 'lahirusup1';
-          const top_level_userName = 'siripelalandsceo1';
-          const organization_name = 'Siripela Lands';
-          const pageID = '101142375149622'; 
-          const formID = '2749217621936408';
-          const lead_origin = 'whatsapp'
+          const project = 'Aug - 2025 - Kurunegala - New';
+          const supivisor_userName = 'leo-holdings-sup-101';
+          const top_level_userName = 'leo-holding-ceo1';
+          const organization_name = 'Leo Holdings';
+          const pageID = '14250359314545073'; 
+          const formID = '104291372556634';
+          const lead_origin = ''
       
           const { error } = await supabase
             .from('leads') // Replace with your table name
@@ -94,9 +98,9 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
           const email = '';
           const leadID = generateRandomLeadID();
           const project = 'Test - Dummy Project - 2025';
-          const supivisor_userName = 'malshan14,afaaz15,madhushika16';
-          const top_level_userName = 'pitch-capital-ceo';
-          const organization_name = 'pitch capital';
+          const supivisor_userName = 'harsha_sv17';
+          const top_level_userName = 'priyantha61';
+          const organization_name = 'iRoof';
           const pageID = '000000000001';
           const formID = '00000000000002';
           const lead_origin = '';
@@ -130,9 +134,9 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
       async function updateusername (){
         const { data, error } = await supabase
   .from('leads')
-  .update({ supivisor_userName: 'union-assurance-sup' })
-  .eq('supivisor_userName', 'lalith23')
-  .eq('organization_name',  'union assurance')
+  .update({ userName: 'isuru45' })
+  .eq('userName', 'Isuru45')
+  .eq('organization_name',  'Leo Holdings')
 
 
 if (error) {
@@ -158,12 +162,12 @@ if (error) {
             const phone = phone_number;
             const email = '';
             const leadID = generateRandomLeadID();
-            const project = 'Jul - 2025 - Poruwadanda';
+            const project = 'Aug - 2025 - Poruwadanda';
             const supivisor_userName = 'rishantha-sup';
             const top_level_userName = 'rashmi-ceo';
             const organization_name = 'Dedigama Property';
             const pageID = '213717618707891';
-            const formID = '652077404514754';
+            const formID = '808610854823015';
             const lead_origin = '';
     
             const { error } = await supabase.from('leads').insert([{
@@ -171,6 +175,7 @@ if (error) {
               email,
               phone,
               userName,
+              created_at: new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString(),
               leadID,
               project,
               supivisor_userName,

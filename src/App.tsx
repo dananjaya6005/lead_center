@@ -139,16 +139,16 @@ const App: React.FC = () => {
       onChange={(text)=> setSelectedOrg(text) }
       value={selectedOrg}
       options={[
-      { label: 'DMS', value: 'DMS' },
-      { label: 'Golden gate', value: 'Golden gate'},
-      { label : 'RIMS' , value : 'RIMS'},
-      { label: 'Parkproperties', value: 'Parkproperties' },
-      { label: 'Royal Oak Holding', value: 'Royal Oak Holding'},
-      { label: 'Royal Oak Residencies', value: 'Royal Oak Residencies' },
+      // { label: 'DMS', value: 'DMS' },
+      // { label: 'Golden gate', value: 'Golden gate'},
+      // { label : 'RIMS' , value : 'RIMS'},
+      // { label: 'Parkproperties', value: 'Parkproperties' },
+      // { label: 'Royal Oak Holding', value: 'Royal Oak Holding'},
+      // { label: 'Royal Oak Residencies', value: 'Royal Oak Residencies' },
       { label: 'EmpirePropeties', value: 'EmpirePropeties' },
-      { label: 'Empirelands', value: 'Empirelands' },
-      { label: 'Jayarealestate', value: 'Jayarealestate' },
-      { label: 'Sahana Idam', value: 'Sahana Idam' },
+      // { label: 'Empirelands', value: 'Empirelands' },
+      // { label: 'Jayarealestate', value: 'Jayarealestate' },
+      // { label: 'Sahana Idam', value: 'Sahana Idam' },
       { label: 'Sunico', value: 'Sunico' },
       { label: 'City Lands', value: 'City Lands' },
       { label: 'Nexis College', value: 'Nexis College' },
@@ -156,12 +156,15 @@ const App: React.FC = () => {
       { label: 'Winrich International', value: 'Winrich International' },
       { label: 'Siripela Homes & Construction', value: 'Siripela Homes & Construction' },
       { label : 'Victoria Property' , value : 'Victoria Property'},
-      { label : 'Tree Trails' , value : 'Tree Trails'},
+      // { label : 'Tree Trails' , value : 'Tree Trails'},
       { label : 'Devthuru Furnitures' , value : 'Devthuru Furnitures'},
       { label : 'Leo Holdings' , value : 'Leo Holdings'},
       { label : 'EPR' , value : 'EPR'},
       { label : 'union assurance' , value : 'union assurance'},
       { label : 'Dedigama Property' , value : 'Dedigama Property'},
+      { label : 'iRoof' , value : 'iRoof'},
+      { label : 'pitch capital' , value : 'pitch capital'},
+     
       
 
       ]}
@@ -188,7 +191,7 @@ const App: React.FC = () => {
     </div>
     </div>
     {/* <RenameSuperviosr/> */}
-    {/* <BulkData/> */}
+    <BulkData/>
     </>
   );
 };
