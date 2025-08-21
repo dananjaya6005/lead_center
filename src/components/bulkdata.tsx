@@ -8,36 +8,115 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
 
 
   const data =[
-    { "name": "priyantha", "phone_number": "+94785110409" },
-    { "name": "W.S.L.Withanage", "phone_number": "+94717276952" },
-    { "name": "Janiru", "phone_number": "+94740670569" },
-    { "name": "Lahiru Sandaruwan", "phone_number": "+94786622817" },
-    { "name": "Darshan", "phone_number": "+94785788180" },
-    { "name": "M G Tharanga Jayanath", "phone_number": "+94771454499" },
-    { "name": "chandana", "phone_number": "+94766473521" },
-    { "name": "Dilini Dissanayake", "phone_number": "+94711626397" },
-    { "name": "Shani Ramanayaka", "phone_number": "+94712449090" }
-  ]
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+  {
+    "name": "Madu Rajapaksha",
+    "phone_number": "+94763140254"
+  },
+  {
+    "name": "Amila Udara",
+    "phone_number": "+94775818254"
+  },
+  {
+    "name": "Melani Silva",
+    "phone_number": "+94767604321"
+  },
+  {
+    "name": "D.R.A.Dilrukshi",
+    "phone_number": "+94770085977"
+  },
+  {
+    "name": "Ashan Dananjaya Wijesooriya",
+    "phone_number": "+94763660704"
+  },
+  {
+    "name": "Buddika Madusanka",
+    "phone_number": "+94715530553"
+  },
+  {
+    "name": "Mahesh Fernando",
+    "phone_number": "+94773552028"
+  },
+  {
+    "name": "Rumini Lakshika",
+    "phone_number": "+94770136977"
+  },
+  {
+    "name": "Malki Mwm",
+    "phone_number": "+94713657816"
+  },
+  {
+    "name": "Rishmi De Silva",
+    "phone_number": "+703056933"
+  },
+  {
+    "name": "Malinga Madusanka",
+    "phone_number": "+94762807592"
+  },
+  {
+    "name": "Kosmodara",
+    "phone_number": "+94719888982"
+  },
+  {
+    "name": "Dulanjana dikshan",
+    "phone_number": "+94752637802"
+  },
+  {
+    "name": "Dhanushka Priyadarshana",
+    "phone_number": "+94777779379"
+  },
+  {
+    "name": "Laaya De Silva",
+    "phone_number": "+94771973655"
+  },
+  {
+    "name": "Yugantha Rathnaweera",
+    "phone_number": "+94773373610"
+  },
+  {
+    "name": "Kasun Chathuranga",
+    "phone_number": "+94772621794"
+  },
+  {
+    "name": "Dimuthu Hasantha",
+    "phone_number": "+94714867139"
+  },
+  {
+    "name": "Ishan theekshana",
+    "phone_number": "+94778468631"
+  },
+  {
+    "name": "Nadun Suriyaarachchi",
+    "phone_number": "+94762288901"
+  },
+  {
+    "name": "Chamith Sandaruwan Samarasekara",
+    "phone_number": "+94758399298"
+  }
+]
+
+
 
   
 
   export default function BulkData() {
 
     const agentUsernames = [
-"ruwan124",
-"maduranga23",
-"rishantha3",
-"maduka4"
+"kushan01",
+  "darshika02",
+  "ayodhya03",
+  "savithri04",
+  "jayanthi05",
+  "shanika06",
+  "manoj07",
+  "janaki08",
+  "pubudu09",
+  "ruwan10",
+  "lakshitha11",
+  "thusitha12",
+  "nuwan13",
+  "priya14",
+  "sanjula15",
+  "dileeja16"
     ];
 
     const generateRandomLeadID = () => {
@@ -50,14 +129,14 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
           const fullName = name;
           const phone = phone_number;
           const email = '';
-          const userName = 'sanath_341';
+          const userName = 'kumari01';
           const leadID = generateRandomLeadID();
-          const project = 'Aug - 2025 - Kurunegala - New';
-          const supivisor_userName = 'leo-holdings-sup-101';
-          const top_level_userName = 'leo-holding-ceo1';
-          const organization_name = 'Leo Holdings';
-          const pageID = '14250359314545073'; 
-          const formID = '104291372556634';
+          const project = 'Aug - 2025 - Thalagala - Verdant Garden';
+          const supivisor_userName = 'supervisor-epl-1';
+          const top_level_userName = 'empire-land-ceo_545';
+          const organization_name = 'EmpirePropeties';
+          const pageID = '104291372716334'; 
+          const formID = '4017986835116755';
           const lead_origin = ''
       
           const { error } = await supabase
@@ -98,11 +177,11 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
           const email = '';
           const leadID = generateRandomLeadID();
           const project = 'Test - Dummy Project - 2025';
-          const supivisor_userName = 'harsha_sv17';
-          const top_level_userName = 'priyantha61';
-          const organization_name = 'iRoof';
-          const pageID = '000000000001';
-          const formID = '00000000000002';
+          const supivisor_userName = 'supervisor17';
+          const top_level_userName = 'ceo18';
+          const organization_name = 'Power Hands Plantations';
+          const pageID = '00000000000111';
+          const formID = '0000000000000222';
           const lead_origin = '';
     
           const { error } = await supabase.from('leads').insert([{
@@ -162,12 +241,12 @@ if (error) {
             const phone = phone_number;
             const email = '';
             const leadID = generateRandomLeadID();
-            const project = 'Aug - 2025 - Poruwadanda';
-            const supivisor_userName = 'rishantha-sup';
-            const top_level_userName = 'rashmi-ceo';
-            const organization_name = 'Dedigama Property';
-            const pageID = '213717618707891';
-            const formID = '808610854823015';
+            const project = 'Aug - 2025 - 3X';
+            const supivisor_userName = 'supervisor17';
+            const top_level_userName = 'ceo18';
+            const organization_name = 'Power Hands Plantations';
+            const pageID = '756191974243060';
+            const formID = '2811685982374230';
             const lead_origin = '';
     
             const { error } = await supabase.from('leads').insert([{
