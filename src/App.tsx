@@ -192,7 +192,7 @@ const App: React.FC = () => {
     </div>
     </div>
     {/* <RenameSuperviosr/> */}
-    <BulkData/>
+    {/* <BulkData/> */}
     </>
   );
 };
