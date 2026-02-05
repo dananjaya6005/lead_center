@@ -150,21 +150,19 @@ const App: React.FC = () => {
       // { label: 'Jayarealestate', value: 'Jayarealestate' },
       // { label: 'Sahana Idam', value: 'Sahana Idam' },
       { label: 'Sunico', value: 'Sunico' },
-      { label: 'City Lands', value: 'City Lands' },
-      { label: 'Nexis College', value: 'Nexis College' },
+
       { label: 'Siripela', value: 'Siripela' },
-      { label: 'Winrich International', value: 'Winrich International' },
+
       { label: 'Siripela Homes & Construction', value: 'Siripela Homes & Construction' },
-      { label : 'Victoria Property' , value : 'Victoria Property'},
- 
-      { label : 'Devthuru Furnitures' , value : 'Devthuru Furnitures'},
+    
+
       { label : 'Leo Holdings' , value : 'Leo Holdings'},
-      { label : 'EPR' , value : 'EPR'},
-      { label : 'union assurance' , value : 'union assurance'},
+
       { label : 'Dedigama Property' , value : 'Dedigama Property'},
-      { label : 'iRoof' , value : 'iRoof'},
-      { label : 'pitch capital' , value : 'pitch capital'},
-      { label : 'Invest Wise' , value : 'Power Hands Plantations'},
+      { label : 'NS Residencies' , value : 'NS Residencies'},
+
+
+
      
       
 
@@ -192,7 +190,7 @@ const App: React.FC = () => {
     </div>
     </div>
     {/* <RenameSuperviosr/> */}
-    <BulkData/>
+    {/* <BulkData/> */}
     </>
   );
 };
