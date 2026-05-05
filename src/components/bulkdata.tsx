@@ -8,29 +8,12 @@ const supabase = createClient('https://cesqkzvbgbrrplvqyxht.supabase.co', 'eyJhb
 
 
 const data =
-  [
-    { "name": "Ariyawansa", "phone_number": "+947555448605", "email": "ariyawansaliyana​​ge@gmail.com" },
-    { "name": "Uditha Suranga De Silva", "phone_number": "+947772229950", "email": "usdesilva@gmail.com" },
-    { "name": "Lakshman Guruge de Silva", "phone_number": "+94714407135", "email": "lakshmanguruge2@gmail.com" },
-    { "name": "Samantha Pitigala", "phone_number": "+94772210546", "email": "samanthaptitigala@gmail.com" },
-    { "name": "Uraj Fernando", "phone_number": "+94773862808", "email": "rajith.fernand@gmail.com" },
-    { "name": "Krishanthi Padmika", "phone_number": "+947724343885", "email": "krishanthipadmika@gmail.com" },
-    { "name": "Madu", "phone_number": "+94766779038", "email": "madushirathnayaka70@gmail.com" },
-    { "name": "Ajith Ranasinghe", "phone_number": "+947776607013", "email": "ranasinghea746@gmail.com" },
-    { "name": "Samila Gangani Nawarathna", "phone_number": "+947680320666", "email": "samila.n@yahoo.com" },
-    { "name": "W Sriyani Udayangani", "phone_number": "+94771895010", "email": "udayangani582@gmail.com" },
-    { "name": "Veena Kaushalya", "phone_number": "+947772404997", "email": "vkaushi9@gmail.com" },
-    { "name": "Dilani Hasintha", "phone_number": "+947724947722", "email": "dhvithana95@gmail.com" },
-    { "name": "JK", "phone_number": "+947503401377", "email": "janitharanasinghe2@gmail.com" },
-    { "name": "Kapila Ratnayake", "phone_number": "+947714948459", "email": "kapila140@gmail.com" },
-    { "name": "Nethini Hirusha", "phone_number": "+947144662606", "email": "hirushanethni2277@gmail.com" },
-    { "name": "Leelananada Jayasekara", "phone_number": "+947718776797", "email": "leelananada600@gmail.com" },
-    { "name": "Jayathilaka Prathapage Upali", "phone_number": "+947188009823", "email": "ujprathapa@gmail.com" },
-    { "name": "Sudarshana Karasinghe", "phone_number": "+947712568889", "email": "kasudarshana288@gmail.com" },
-    { "name": "Nayana Madhumadawa", "phone_number": "+947885055210", "email": "nayanamadhumadawa@gmail.com" }
-  ]
-
-
+[
+  { "name": "Pasindu Dayan", "phone_number": "+94773530155" },
+  { "name": "Omar Mohammed", "phone_number": "+94777842200" },
+  { "name": "Rajitha", "phone_number": "+64225353311" },
+  { "name": "Murugnathan Gobeenath", "phone_number": "+94776296895" }
+]
 
 
 
@@ -38,10 +21,9 @@ export default function BulkData() {
 
   const agentUsernames = [
 
-    "dinesh84",
-    "vinodya52",
-    "dhanushka19",
-    "tharushi63"
+    "pasindu789",
+    "ishara456",
+    "harith231"
   ];
 
   const generateRandomLeadID = () => {
@@ -50,18 +32,18 @@ export default function BulkData() {
 
   const insertDataWithDelay = async (data) => {
     for (let i = 0; i < data.length; i++) {
-      const { name, phone_number } = data[i];
+      const { email_address, name, phone_number } = data[i];
       const fullName = name;
       const phone = phone_number;
-      const email = '';
-      const userName = 'ruwan_878';
+      const email = email_address;
+      const userName = 'maduka4';
       const leadID = generateRandomLeadID();
-      const project = 'Nov - 2025 - Kottawa';
-      const supivisor_userName = 'supervisor-epl-1,anusha-sup';
-      const top_level_userName = 'empire-land-ceo_545';
-      const organization_name = 'EmpirePropeties';
-      const pageID = '104291372716334';
-      const formID = '3064970577016617';
+      const project = 'Apr - 2026 - Madurawala';
+      const supivisor_userName = 'rishantha-sup';
+      const top_level_userName = 'navindu23';
+      const organization_name = 'Dedigama Property';
+      const pageID = '213717618707891';
+      const formID = '971833808612475';
       const lead_origin = ''
 
       const { error } = await supabase
@@ -161,17 +143,17 @@ export default function BulkData() {
       const userName = agentUsernames[i];
 
       for (let j = 0; j < chunk.length; j++) {
-        const { name, phone_number, email: chunkEmail } = chunk[j];
+        const { name, phone_number, email_address: chunkEmail } = chunk[j];
         const fullName = name;
         const phone = phone_number;
         const email = chunkEmail;
 
-        const project = 'Nov - 2025 - Kottawa';
-        const supivisor_userName = 'supervisor-epl-1,saranga-ep_11,kasuni-ep_12,anusha-sup';
-        const top_level_userName = 'empire-land-ceo_545';
-        const organization_name = 'EmpirePropeties';
-        const pageID = '104291372716334';
-        const formID = '3064970577016617';
+        const project = 'May - 2026 - Campaign 1';
+        const supivisor_userName = 'supervisor_ur';
+        const top_level_userName = 'asanka_md1';
+        const organization_name = 'Universal Residencies';
+        const pageID = '1422844594399608';
+        const formID = '1668663757800471';
         const lead_origin = '';
         const leadID = generateRandomLeadID();
 
@@ -188,7 +170,8 @@ export default function BulkData() {
           organization_name,
           pageID,
           lead_origin,
-          formID
+          formID,
+          created_at: new Date(Date.now() - Math.random() * (7 * 60 * 60 * 1000)).toISOString(),
         }]);
 
         if (error) {
@@ -295,6 +278,34 @@ export default function BulkData() {
   }
 
 
+  async function updateUspervisorandOrg() {
+    const { data, error } = await supabase
+      .from('leads')
+      .update({ supivisor_userName: 'rajitha01,yasitha02,praveen03,lakmal04,udani05,lakshani06', organization_name: 'NS Residencies', top_level_userName: 'sudath01', userName: 'praveen056' })
+      .eq('formID', '2022599621625590')
+    if (error) {
+      console.error('Update failed:', error);
+    } else {
+      console.log('Update successful:', data);
+    }
+  }
+
+
+  async function updateProjectNameEqtoFormID() {
+    const { data, error } = await supabase
+      .from('leads')
+      .update({ project: 'Properties.lk | Jan - 2026 - Local' })
+      .eq('formID', '1787405951920156')
+      .eq('organization_name', 'Leo Holdings')
+
+    if (error) {
+      console.error('Update failed:', error);
+    } else {
+      console.log('Update successful:', data);
+    }
+  }
+
+
 
   async function updateSomeinfowithlimit() {
     // Supabase update() does not support limit() directly.
@@ -358,6 +369,14 @@ export default function BulkData() {
 
       <Button onClick={() => updateSomeinfowithlimit()} type="dashed">
         Update Some Info with limit
+      </Button>
+
+      <Button onClick={() => updateProjectNameEqtoFormID()} type="dashed">
+        Update Project Name Eq to Form ID
+      </Button>
+
+      <Button onClick={() => updateUspervisorandOrg()} type="dashed">
+        Update Uspervisor and Org
       </Button>
 
 

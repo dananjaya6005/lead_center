@@ -160,6 +160,7 @@ const App: React.FC = () => {
 
       { label : 'Dedigama Property' , value : 'Dedigama Property'},
       { label : 'NS Residencies' , value : 'NS Residencies'},
+      {label : 'Proud land', value : 'Proud land'}
 
 
 
@@ -190,7 +191,7 @@ const App: React.FC = () => {
     </div>
     </div>
     {/* <RenameSuperviosr/> */}
-    {/* <BulkData/> */}
+    <BulkData/>
     </>
   );
 };
