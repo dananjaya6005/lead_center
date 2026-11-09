@@ -44,19 +44,20 @@ const App: React.FC = () => {
       .from('forManualLeadAssigment')
       .select('*').eq('organization_name', selectedOrg)
     setData(data);
-  console.log(data[0].projects)
-  setProjectForOrg(data[0].projects);
 
   if (error) {
     console.error(error);
     return;
   }
 
+  const projects = data?.[0]?.projects ?? [];
 
-  const transformedProjects = data[0].projects.map((project: any) => ({
-    label: project,
-    value: project
-  }));
+  const transformedProjects = projects
+    .filter((project: string) => /call|center/i.test(project))
+    .map((project: string) => ({
+      label: project,
+      value: project
+    }));
 
   setProjectForOrg(transformedProjects);
 
@@ -109,10 +110,6 @@ const App: React.FC = () => {
 
 
 
-
-
-
-
   return (
     <>
     
@@ -160,7 +157,15 @@ const App: React.FC = () => {
 
       { label : 'Dedigama Property' , value : 'Dedigama Property'},
       { label : 'NS Residencies' , value : 'NS Residencies'},
-      {label : 'Proud land', value : 'Proud land'}
+      {label : 'Proud land', value : 'Proud land'},
+      {label : 'Island Xpress' , value : 'Island Xpress'},
+      {label : 'Finaxis Real Estate' , value : 'Finaxis Real Estate'}, 
+      {label : 'Avroma and Ariyawansa Jewellers' , value : 'Avroma and Ariyawansa Jewellers'},
+      {label : 'Dedigama Property' , value : 'Dedigama Property'}, 
+
+
+
+
 
 
 
@@ -191,7 +196,7 @@ const App: React.FC = () => {
     </div>
     </div>
     {/* <RenameSuperviosr/> */}
-    <BulkData/>
+    {/* <BulkData/> */}
     </>
   );
 };
